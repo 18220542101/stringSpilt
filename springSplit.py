@@ -9,14 +9,7 @@ def stringSplit(string):
 
 # 实现将一个单词的字母逆序输出的功能
 def charReverse(word):
-    length = len(word)
-    lis = list(word)
-    lis1 = list(range(0, length))
-    j = 0
-    for i in range(length-1,-1,-1):
-        lis1[i] = lis[j]
-        j = j + 1
-    word1 = ''.join(lis1)
+    word1 = word[::-1]
     return word1
 
 # 输入内容并输出转化后结果
